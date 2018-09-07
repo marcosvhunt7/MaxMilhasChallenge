@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8976E0F214210100042DEC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E0E214210100042DEC1 /* AppDelegate.swift */; };
+		D8976E12214210100042DEC1 /* MaxMilhasChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8976E10214210100042DEC1 /* MaxMilhasChallenge.xcdatamodeld */; };
+		D8976E14214210100042DEC1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E13214210100042DEC1 /* MasterViewController.swift */; };
+		D8976E16214210100042DEC1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E15214210100042DEC1 /* DetailViewController.swift */; };
+		D8976E19214210100042DEC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8976E17214210100042DEC1 /* Main.storyboard */; };
+		D8976E1B214210120042DEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8976E1A214210120042DEC1 /* Assets.xcassets */; };
+		D8976E1E214210120042DEC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8976E1C214210120042DEC1 /* LaunchScreen.storyboard */; };
+		D8976E29214210130042DEC1 /* MaxMilhasChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E28214210130042DEC1 /* MaxMilhasChallengeTests.swift */; };
+		D8976E34214210130042DEC1 /* MaxMilhasChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E33214210130042DEC1 /* MaxMilhasChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8976E25214210130042DEC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8976E03214210100042DEC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8976E0A214210100042DEC1;
+			remoteInfo = MaxMilhasChallenge;
+		};
+		D8976E30214210130042DEC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8976E03214210100042DEC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8976E0A214210100042DEC1;
+			remoteInfo = MaxMilhasChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8976E0B214210100042DEC1 /* MaxMilhasChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaxMilhasChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8976E0E214210100042DEC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8976E11214210100042DEC1 /* MaxMilhasChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MaxMilhasChallenge.xcdatamodel; sourceTree = "<group>"; };
+		D8976E13214210100042DEC1 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		D8976E15214210100042DEC1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D8976E18214210100042DEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8976E1A214210120042DEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8976E1D214210120042DEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8976E1F214210120042DEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8976E24214210130042DEC1 /* MaxMilhasChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxMilhasChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8976E28214210130042DEC1 /* MaxMilhasChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxMilhasChallengeTests.swift; sourceTree = "<group>"; };
+		D8976E2A214210130042DEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8976E2F214210130042DEC1 /* MaxMilhasChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxMilhasChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8976E33214210130042DEC1 /* MaxMilhasChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxMilhasChallengeUITests.swift; sourceTree = "<group>"; };
+		D8976E35214210130042DEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8976E08214210100042DEC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8976E21214210130042DEC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8976E2C214210130042DEC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8976E02214210100042DEC1 = {
+			isa = PBXGroup;
+			children = (
+				D8976E0D214210100042DEC1 /* MaxMilhasChallenge */,
+				D8976E27214210130042DEC1 /* MaxMilhasChallengeTests */,
+				D8976E32214210130042DEC1 /* MaxMilhasChallengeUITests */,
+				D8976E0C214210100042DEC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8976E0C214210100042DEC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8976E0B214210100042DEC1 /* MaxMilhasChallenge.app */,
+				D8976E24214210130042DEC1 /* MaxMilhasChallengeTests.xctest */,
+				D8976E2F214210130042DEC1 /* MaxMilhasChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8976E0D214210100042DEC1 /* MaxMilhasChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				D8976E0E214210100042DEC1 /* AppDelegate.swift */,
+				D8976E13214210100042DEC1 /* MasterViewController.swift */,
+				D8976E15214210100042DEC1 /* DetailViewController.swift */,
+				D8976E17214210100042DEC1 /* Main.storyboard */,
+				D8976E1A214210120042DEC1 /* Assets.xcassets */,
+				D8976E1C214210120042DEC1 /* LaunchScreen.storyboard */,
+				D8976E1F214210120042DEC1 /* Info.plist */,
+				D8976E10214210100042DEC1 /* MaxMilhasChallenge.xcdatamodeld */,
+			);
+			path = MaxMilhasChallenge;
+			sourceTree = "<group>";
+		};
+		D8976E27214210130042DEC1 /* MaxMilhasChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8976E28214210130042DEC1 /* MaxMilhasChallengeTests.swift */,
+				D8976E2A214210130042DEC1 /* Info.plist */,
+			);
+			path = MaxMilhasChallengeTests;
+			sourceTree = "<group>";
+		};
+		D8976E32214210130042DEC1 /* MaxMilhasChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8976E33214210130042DEC1 /* MaxMilhasChallengeUITests.swift */,
+				D8976E35214210130042DEC1 /* Info.plist */,
+			);
+			path = MaxMilhasChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8976E0A214210100042DEC1 /* MaxMilhasChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8976E38214210130042DEC1 /* Build configuration list for PBXNativeTarget "MaxMilhasChallenge" */;
+			buildPhases = (
+				D8976E07214210100042DEC1 /* Sources */,
+				D8976E08214210100042DEC1 /* Frameworks */,
+				D8976E09214210100042DEC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaxMilhasChallenge;
+			productName = MaxMilhasChallenge;
+			productReference = D8976E0B214210100042DEC1 /* MaxMilhasChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8976E23214210130042DEC1 /* MaxMilhasChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8976E3B214210130042DEC1 /* Build configuration list for PBXNativeTarget "MaxMilhasChallengeTests" */;
+			buildPhases = (
+				D8976E20214210130042DEC1 /* Sources */,
+				D8976E21214210130042DEC1 /* Frameworks */,
+				D8976E22214210130042DEC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8976E26214210130042DEC1 /* PBXTargetDependency */,
+			);
+			name = MaxMilhasChallengeTests;
+			productName = MaxMilhasChallengeTests;
+			productReference = D8976E24214210130042DEC1 /* MaxMilhasChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8976E2E214210130042DEC1 /* MaxMilhasChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8976E3E214210130042DEC1 /* Build configuration list for PBXNativeTarget "MaxMilhasChallengeUITests" */;
+			buildPhases = (
+				D8976E2B214210130042DEC1 /* Sources */,
+				D8976E2C214210130042DEC1 /* Frameworks */,
+				D8976E2D214210130042DEC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8976E31214210130042DEC1 /* PBXTargetDependency */,
+			);
+			name = MaxMilhasChallengeUITests;
+			productName = MaxMilhasChallengeUITests;
+			productReference = D8976E2F214210130042DEC1 /* MaxMilhasChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8976E03214210100042DEC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Marcos Vinicius da Cunha Brito";
+				TargetAttributes = {
+					D8976E0A214210100042DEC1 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					D8976E23214210130042DEC1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D8976E0A214210100042DEC1;
+					};
+					D8976E2E214210130042DEC1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D8976E0A214210100042DEC1;
+					};
+				};
+			};
+			buildConfigurationList = D8976E06214210100042DEC1 /* Build configuration list for PBXProject "MaxMilhasChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8976E02214210100042DEC1;
+			productRefGroup = D8976E0C214210100042DEC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8976E0A214210100042DEC1 /* MaxMilhasChallenge */,
+				D8976E23214210130042DEC1 /* MaxMilhasChallengeTests */,
+				D8976E2E214210130042DEC1 /* MaxMilhasChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8976E09214210100042DEC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8976E1E214210120042DEC1 /* LaunchScreen.storyboard in Resources */,
+				D8976E1B214210120042DEC1 /* Assets.xcassets in Resources */,
+				D8976E19214210100042DEC1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8976E22214210130042DEC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8976E2D214210130042DEC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8976E07214210100042DEC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8976E12214210100042DEC1 /* MaxMilhasChallenge.xcdatamodeld in Sources */,
+				D8976E0F214210100042DEC1 /* AppDelegate.swift in Sources */,
+				D8976E14214210100042DEC1 /* MasterViewController.swift in Sources */,
+				D8976E16214210100042DEC1 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8976E20214210130042DEC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8976E29214210130042DEC1 /* MaxMilhasChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8976E2B214210130042DEC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8976E34214210130042DEC1 /* MaxMilhasChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8976E26214210130042DEC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8976E0A214210100042DEC1 /* MaxMilhasChallenge */;
+			targetProxy = D8976E25214210130042DEC1 /* PBXContainerItemProxy */;
+		};
+		D8976E31214210130042DEC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8976E0A214210100042DEC1 /* MaxMilhasChallenge */;
+			targetProxy = D8976E30214210130042DEC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8976E17214210100042DEC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8976E18214210100042DEC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8976E1C214210120042DEC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8976E1D214210120042DEC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8976E36214210130042DEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8976E37214210130042DEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8976E39214210130042DEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66KNLMFJQ2;
+				INFOPLIST_FILE = MaxMilhasChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcosbrito.MaxMilhasChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8976E3A214210130042DEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66KNLMFJQ2;
+				INFOPLIST_FILE = MaxMilhasChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcosbrito.MaxMilhasChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8976E3C214210130042DEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66KNLMFJQ2;
+				INFOPLIST_FILE = MaxMilhasChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcosbrito.MaxMilhasChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaxMilhasChallenge.app/MaxMilhasChallenge";
+			};
+			name = Debug;
+		};
+		D8976E3D214210130042DEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66KNLMFJQ2;
+				INFOPLIST_FILE = MaxMilhasChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcosbrito.MaxMilhasChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaxMilhasChallenge.app/MaxMilhasChallenge";
+			};
+			name = Release;
+		};
+		D8976E3F214210130042DEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66KNLMFJQ2;
+				INFOPLIST_FILE = MaxMilhasChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcosbrito.MaxMilhasChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MaxMilhasChallenge;
+			};
+			name = Debug;
+		};
+		D8976E40214210130042DEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66KNLMFJQ2;
+				INFOPLIST_FILE = MaxMilhasChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcosbrito.MaxMilhasChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MaxMilhasChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8976E06214210100042DEC1 /* Build configuration list for PBXProject "MaxMilhasChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8976E36214210130042DEC1 /* Debug */,
+				D8976E37214210130042DEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8976E38214210130042DEC1 /* Build configuration list for PBXNativeTarget "MaxMilhasChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8976E39214210130042DEC1 /* Debug */,
+				D8976E3A214210130042DEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8976E3B214210130042DEC1 /* Build configuration list for PBXNativeTarget "MaxMilhasChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8976E3C214210130042DEC1 /* Debug */,
+				D8976E3D214210130042DEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8976E3E214210130042DEC1 /* Build configuration list for PBXNativeTarget "MaxMilhasChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8976E3F214210130042DEC1 /* Debug */,
+				D8976E40214210130042DEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8976E10214210100042DEC1 /* MaxMilhasChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8976E11214210100042DEC1 /* MaxMilhasChallenge.xcdatamodel */,
+			);
+			currentVersion = D8976E11214210100042DEC1 /* MaxMilhasChallenge.xcdatamodel */;
+			path = MaxMilhasChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D8976E03214210100042DEC1 /* Project object */;
+}
