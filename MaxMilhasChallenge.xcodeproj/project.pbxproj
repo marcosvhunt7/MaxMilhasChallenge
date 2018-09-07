@@ -10,16 +10,25 @@
 		2C2F7C33693ADAAF4871A3C5 /* Pods_MaxMilhasChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F480EA577EB0FCE921B6D080 /* Pods_MaxMilhasChallengeUITests.framework */; };
 		C5FEFA8A1E5E1C02B7991156 /* Pods_MaxMilhasChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC3B8AEB79519BE767824B9 /* Pods_MaxMilhasChallenge.framework */; };
 		D8976E0F214210100042DEC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E0E214210100042DEC1 /* AppDelegate.swift */; };
-		D8976E12214210100042DEC1 /* MaxMilhasChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8976E10214210100042DEC1 /* MaxMilhasChallenge.xcdatamodeld */; };
-		D8976E14214210100042DEC1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E13214210100042DEC1 /* MasterViewController.swift */; };
-		D8976E16214210100042DEC1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E15214210100042DEC1 /* DetailViewController.swift */; };
-		D8976E19214210100042DEC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8976E17214210100042DEC1 /* Main.storyboard */; };
 		D8976E1B214210120042DEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8976E1A214210120042DEC1 /* Assets.xcassets */; };
-		D8976E1E214210120042DEC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8976E1C214210120042DEC1 /* LaunchScreen.storyboard */; };
 		D8976E29214210130042DEC1 /* MaxMilhasChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E28214210130042DEC1 /* MaxMilhasChallengeTests.swift */; };
 		D8976E34214210130042DEC1 /* MaxMilhasChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E33214210130042DEC1 /* MaxMilhasChallengeUITests.swift */; };
 		D8C5E1AA2142EABD00FE7D94 /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1A92142EABD00FE7D94 /* BaseEntity.swift */; };
 		D8C5E1AC2142EAD500FE7D94 /* TicketEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1AB2142EAD500FE7D94 /* TicketEntity.swift */; };
+		D8C5E1CF2142F36500FE7D94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1CE2142F36400FE7D94 /* ViewController.swift */; };
+		D8C5E1D22142F39400FE7D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C5E1D12142F38C00FE7D94 /* Main.storyboard */; };
+		D8C5E1D42142F39D00FE7D94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C5E1D32142F39B00FE7D94 /* LaunchScreen.storyboard */; };
+		D8C5E1D62142F4FF00FE7D94 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1D52142F4FF00FE7D94 /* Date+Extensions.swift */; };
+		D8C5E1D72142F76E00FE7D94 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1AE2142EF6400FE7D94 /* Provider.swift */; };
+		D8C5E1D82142F77200FE7D94 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1AF2142F04400FE7D94 /* LocalDataSource.swift */; };
+		D8C5E1D92142F77400FE7D94 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1AD2142ECE900FE7D94 /* DatabaseManager.swift */; };
+		D8C5E1DB2142F8CA00FE7D94 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1DA2142F8C900FE7D94 /* Repository.swift */; };
+		D8C5E1E3214301D200FE7D94 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1E22142FB1B00FE7D94 /* HomeWireframe.swift */; };
+		D8C5E1E4214301D400FE7D94 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1E12142FB1B00FE7D94 /* HomeInteractor.swift */; };
+		D8C5E1E5214301D600FE7D94 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1E02142FB1B00FE7D94 /* HomeViewController.swift */; };
+		D8C5E1E6214301D900FE7D94 /* homePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1DF2142FB1B00FE7D94 /* homePresenter.swift */; };
+		D8C5E1E7214301DC00FE7D94 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1DE2142FB1B00FE7D94 /* HomeProtocols.swift */; };
+		D8C5E1E8214301E200FE7D94 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C5E1DD2142FB1B00FE7D94 /* Home.storyboard */; };
 		ED7085BEB616E8A22A2485B8 /* Pods_MaxMilhasChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B6F2C594DB4D809C48DA6F /* Pods_MaxMilhasChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,12 +58,7 @@
 		B0B6F2C594DB4D809C48DA6F /* Pods_MaxMilhasChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaxMilhasChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8976E0B214210100042DEC1 /* MaxMilhasChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaxMilhasChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8976E0E214210100042DEC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8976E11214210100042DEC1 /* MaxMilhasChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MaxMilhasChallenge.xcdatamodel; sourceTree = "<group>"; };
-		D8976E13214210100042DEC1 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		D8976E15214210100042DEC1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		D8976E18214210100042DEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8976E1A214210120042DEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D8976E1D214210120042DEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8976E1F214210120042DEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8976E24214210130042DEC1 /* MaxMilhasChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxMilhasChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8976E28214210130042DEC1 /* MaxMilhasChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxMilhasChallengeTests.swift; sourceTree = "<group>"; };
@@ -65,6 +69,19 @@
 		D8C5E1A92142EABD00FE7D94 /* BaseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEntity.swift; sourceTree = "<group>"; };
 		D8C5E1AB2142EAD500FE7D94 /* TicketEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketEntity.swift; sourceTree = "<group>"; };
 		D8C5E1AD2142ECE900FE7D94 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		D8C5E1AE2142EF6400FE7D94 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		D8C5E1AF2142F04400FE7D94 /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
+		D8C5E1CE2142F36400FE7D94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8C5E1D12142F38C00FE7D94 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D8C5E1D32142F39B00FE7D94 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8C5E1D52142F4FF00FE7D94 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		D8C5E1DA2142F8C900FE7D94 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		D8C5E1DD2142FB1B00FE7D94 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		D8C5E1DE2142FB1B00FE7D94 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		D8C5E1DF2142FB1B00FE7D94 /* homePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePresenter.swift; sourceTree = "<group>"; };
+		D8C5E1E02142FB1B00FE7D94 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D8C5E1E12142FB1B00FE7D94 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		D8C5E1E22142FB1B00FE7D94 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
 		F37A6E9F3358D06E9C0EB8BE /* Pods-MaxMilhasChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaxMilhasChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaxMilhasChallengeTests/Pods-MaxMilhasChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F480EA577EB0FCE921B6D080 /* Pods_MaxMilhasChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaxMilhasChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48E794A0312723F3A1C7501 /* Pods-MaxMilhasChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaxMilhasChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaxMilhasChallenge/Pods-MaxMilhasChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,14 +164,14 @@
 			isa = PBXGroup;
 			children = (
 				D8C5E1A72142EABD00FE7D94 /* Database */,
+				D8C5E1DC2142FB1B00FE7D94 /* Home */,
 				D8976E0E214210100042DEC1 /* AppDelegate.swift */,
-				D8976E13214210100042DEC1 /* MasterViewController.swift */,
-				D8976E15214210100042DEC1 /* DetailViewController.swift */,
-				D8976E17214210100042DEC1 /* Main.storyboard */,
+				D8C5E1CE2142F36400FE7D94 /* ViewController.swift */,
+				D8C5E1D52142F4FF00FE7D94 /* Date+Extensions.swift */,
+				D8C5E1D12142F38C00FE7D94 /* Main.storyboard */,
 				D8976E1A214210120042DEC1 /* Assets.xcassets */,
-				D8976E1C214210120042DEC1 /* LaunchScreen.storyboard */,
+				D8C5E1D32142F39B00FE7D94 /* LaunchScreen.storyboard */,
 				D8976E1F214210120042DEC1 /* Info.plist */,
-				D8976E10214210100042DEC1 /* MaxMilhasChallenge.xcdatamodeld */,
 			);
 			path = MaxMilhasChallenge;
 			sourceTree = "<group>";
@@ -180,6 +197,9 @@
 		D8C5E1A72142EABD00FE7D94 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				D8C5E1DA2142F8C900FE7D94 /* Repository.swift */,
+				D8C5E1AF2142F04400FE7D94 /* LocalDataSource.swift */,
+				D8C5E1AE2142EF6400FE7D94 /* Provider.swift */,
 				D8C5E1AD2142ECE900FE7D94 /* DatabaseManager.swift */,
 				D8C5E1A82142EABD00FE7D94 /* Entities */,
 			);
@@ -193,6 +213,19 @@
 				D8C5E1AB2142EAD500FE7D94 /* TicketEntity.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		D8C5E1DC2142FB1B00FE7D94 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5E1DD2142FB1B00FE7D94 /* Home.storyboard */,
+				D8C5E1DE2142FB1B00FE7D94 /* HomeProtocols.swift */,
+				D8C5E1DF2142FB1B00FE7D94 /* homePresenter.swift */,
+				D8C5E1E02142FB1B00FE7D94 /* HomeViewController.swift */,
+				D8C5E1E12142FB1B00FE7D94 /* HomeInteractor.swift */,
+				D8C5E1E22142FB1B00FE7D94 /* HomeWireframe.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,9 +336,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8976E1E214210120042DEC1 /* LaunchScreen.storyboard in Resources */,
+				D8C5E1D42142F39D00FE7D94 /* LaunchScreen.storyboard in Resources */,
 				D8976E1B214210120042DEC1 /* Assets.xcassets in Resources */,
-				D8976E19214210100042DEC1 /* Main.storyboard in Resources */,
+				D8C5E1D22142F39400FE7D94 /* Main.storyboard in Resources */,
+				D8C5E1E8214301E200FE7D94 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,12 +453,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C5E1D92142F77400FE7D94 /* DatabaseManager.swift in Sources */,
+				D8C5E1E4214301D400FE7D94 /* HomeInteractor.swift in Sources */,
+				D8C5E1CF2142F36500FE7D94 /* ViewController.swift in Sources */,
 				D8C5E1AC2142EAD500FE7D94 /* TicketEntity.swift in Sources */,
-				D8976E12214210100042DEC1 /* MaxMilhasChallenge.xcdatamodeld in Sources */,
+				D8C5E1E7214301DC00FE7D94 /* HomeProtocols.swift in Sources */,
+				D8C5E1E3214301D200FE7D94 /* HomeWireframe.swift in Sources */,
 				D8C5E1AA2142EABD00FE7D94 /* BaseEntity.swift in Sources */,
+				D8C5E1E6214301D900FE7D94 /* homePresenter.swift in Sources */,
+				D8C5E1D82142F77200FE7D94 /* LocalDataSource.swift in Sources */,
+				D8C5E1D62142F4FF00FE7D94 /* Date+Extensions.swift in Sources */,
+				D8C5E1D72142F76E00FE7D94 /* Provider.swift in Sources */,
 				D8976E0F214210100042DEC1 /* AppDelegate.swift in Sources */,
-				D8976E14214210100042DEC1 /* MasterViewController.swift in Sources */,
-				D8976E16214210100042DEC1 /* DetailViewController.swift in Sources */,
+				D8C5E1DB2142F8CA00FE7D94 /* Repository.swift in Sources */,
+				D8C5E1E5214301D600FE7D94 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,25 +500,6 @@
 			targetProxy = D8976E30214210130042DEC1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D8976E17214210100042DEC1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8976E18214210100042DEC1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D8976E1C214210120042DEC1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8976E1D214210120042DEC1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D8976E36214210130042DEC1 /* Debug */ = {
@@ -757,19 +780,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		D8976E10214210100042DEC1 /* MaxMilhasChallenge.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D8976E11214210100042DEC1 /* MaxMilhasChallenge.xcdatamodel */,
-			);
-			currentVersion = D8976E11214210100042DEC1 /* MaxMilhasChallenge.xcdatamodel */;
-			path = MaxMilhasChallenge.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = D8976E03214210100042DEC1 /* Project object */;
 }
