@@ -9,13 +9,23 @@
 /* Begin PBXBuildFile section */
 		2C2F7C33693ADAAF4871A3C5 /* Pods_MaxMilhasChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F480EA577EB0FCE921B6D080 /* Pods_MaxMilhasChallengeUITests.framework */; };
 		C5FEFA8A1E5E1C02B7991156 /* Pods_MaxMilhasChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC3B8AEB79519BE767824B9 /* Pods_MaxMilhasChallenge.framework */; };
+		D86B083D2144357300E5555B /* TicketsDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B08372144357300E5555B /* TicketsDetailInteractor.swift */; };
+		D86B083F2144357300E5555B /* TicketsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B08392144357300E5555B /* TicketsDetailViewController.swift */; };
+		D86B08402144357300E5555B /* TicketsDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B083A2144357300E5555B /* TicketsDetailWireframe.swift */; };
+		D86B08412144357300E5555B /* TicketsDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B083B2144357300E5555B /* TicketsDetailPresenter.swift */; };
+		D86B08422144357300E5555B /* TicketsDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B083C2144357300E5555B /* TicketsDetailProtocols.swift */; };
+		D86B084421443C0200E5555B /* TicketsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86B08432144364D00E5555B /* TicketsDetail.storyboard */; };
+		D86B085121445A1700E5555B /* TicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86B084D2144566300E5555B /* TicketTableViewCell.xib */; };
+		D86B085221445A1D00E5555B /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B084E2144566300E5555B /* TicketTableViewCell.swift */; };
+		D86B085321445B1E00E5555B /* TicketsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B084A2144566300E5555B /* TicketsTableViewController.swift */; };
+		D86B0856214468CF00E5555B /* TicketsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86B08462144566300E5555B /* TicketsList.storyboard */; };
+		D86B08582144808900E5555B /* PopulateDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B08572144808900E5555B /* PopulateDatabase.swift */; };
 		D8976E0F214210100042DEC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E0E214210100042DEC1 /* AppDelegate.swift */; };
 		D8976E1B214210120042DEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8976E1A214210120042DEC1 /* Assets.xcassets */; };
 		D8976E29214210130042DEC1 /* MaxMilhasChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E28214210130042DEC1 /* MaxMilhasChallengeTests.swift */; };
 		D8976E34214210130042DEC1 /* MaxMilhasChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E33214210130042DEC1 /* MaxMilhasChallengeUITests.swift */; };
 		D8C5E1AA2142EABD00FE7D94 /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1A92142EABD00FE7D94 /* BaseEntity.swift */; };
 		D8C5E1AC2142EAD500FE7D94 /* TicketEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1AB2142EAD500FE7D94 /* TicketEntity.swift */; };
-		D8C5E1CF2142F36500FE7D94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1CE2142F36400FE7D94 /* ViewController.swift */; };
 		D8C5E1D22142F39400FE7D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C5E1D12142F38C00FE7D94 /* Main.storyboard */; };
 		D8C5E1D42142F39D00FE7D94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C5E1D32142F39B00FE7D94 /* LaunchScreen.storyboard */; };
 		D8C5E1D62142F4FF00FE7D94 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1D52142F4FF00FE7D94 /* Date+Extensions.swift */; };
@@ -60,6 +70,17 @@
 		67AA154226726C8011DB509D /* Pods-MaxMilhasChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaxMilhasChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaxMilhasChallenge/Pods-MaxMilhasChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		8EC3B8AEB79519BE767824B9 /* Pods_MaxMilhasChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaxMilhasChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B6F2C594DB4D809C48DA6F /* Pods_MaxMilhasChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaxMilhasChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86B08372144357300E5555B /* TicketsDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsDetailInteractor.swift; sourceTree = "<group>"; };
+		D86B08392144357300E5555B /* TicketsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsDetailViewController.swift; sourceTree = "<group>"; };
+		D86B083A2144357300E5555B /* TicketsDetailWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsDetailWireframe.swift; sourceTree = "<group>"; };
+		D86B083B2144357300E5555B /* TicketsDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsDetailPresenter.swift; sourceTree = "<group>"; };
+		D86B083C2144357300E5555B /* TicketsDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsDetailProtocols.swift; sourceTree = "<group>"; };
+		D86B08432144364D00E5555B /* TicketsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TicketsDetail.storyboard; sourceTree = "<group>"; };
+		D86B08462144566300E5555B /* TicketsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TicketsList.storyboard; sourceTree = "<group>"; };
+		D86B084A2144566300E5555B /* TicketsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsTableViewController.swift; sourceTree = "<group>"; };
+		D86B084D2144566300E5555B /* TicketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketTableViewCell.xib; sourceTree = "<group>"; };
+		D86B084E2144566300E5555B /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		D86B08572144808900E5555B /* PopulateDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulateDatabase.swift; sourceTree = "<group>"; };
 		D8976E0B214210100042DEC1 /* MaxMilhasChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaxMilhasChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8976E0E214210100042DEC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8976E1A214210120042DEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,7 +96,6 @@
 		D8C5E1AD2142ECE900FE7D94 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		D8C5E1AE2142EF6400FE7D94 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		D8C5E1AF2142F04400FE7D94 /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
-		D8C5E1CE2142F36400FE7D94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8C5E1D12142F38C00FE7D94 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D8C5E1D32142F39B00FE7D94 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8C5E1D52142F4FF00FE7D94 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
@@ -146,6 +166,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D86B08362144357300E5555B /* TicketsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D86B08432144364D00E5555B /* TicketsDetail.storyboard */,
+				D86B08372144357300E5555B /* TicketsDetailInteractor.swift */,
+				D86B08392144357300E5555B /* TicketsDetailViewController.swift */,
+				D86B083A2144357300E5555B /* TicketsDetailWireframe.swift */,
+				D86B083B2144357300E5555B /* TicketsDetailPresenter.swift */,
+				D86B083C2144357300E5555B /* TicketsDetailProtocols.swift */,
+			);
+			path = TicketsDetail;
+			sourceTree = "<group>";
+		};
+		D86B08452144566300E5555B /* TicketsList */ = {
+			isa = PBXGroup;
+			children = (
+				D86B08462144566300E5555B /* TicketsList.storyboard */,
+				D86B084A2144566300E5555B /* TicketsTableViewController.swift */,
+				D86B084D2144566300E5555B /* TicketTableViewCell.xib */,
+				D86B084E2144566300E5555B /* TicketTableViewCell.swift */,
+			);
+			path = TicketsList;
+			sourceTree = "<group>";
+		};
+		D86B08502144567000E5555B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D86B08452144566300E5555B /* TicketsList */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		D8976E02214210100042DEC1 = {
 			isa = PBXGroup;
 			children = (
@@ -173,8 +225,9 @@
 			children = (
 				D8C5E1A72142EABD00FE7D94 /* Database */,
 				D8C5E1DC2142FB1B00FE7D94 /* Home */,
+				D86B08362144357300E5555B /* TicketsDetail */,
+				D86B08502144567000E5555B /* Components */,
 				D8976E0E214210100042DEC1 /* AppDelegate.swift */,
-				D8C5E1CE2142F36400FE7D94 /* ViewController.swift */,
 				D8C5E1EF2143184400FE7D94 /* Theme.swift */,
 				D8C5E1D52142F4FF00FE7D94 /* Date+Extensions.swift */,
 				D8C5E1ED2143166F00FE7D94 /* UITextField+Extensions.swift */,
@@ -212,6 +265,7 @@
 				D8C5E1DA2142F8C900FE7D94 /* Repository.swift */,
 				D8C5E1AF2142F04400FE7D94 /* LocalDataSource.swift */,
 				D8C5E1AE2142EF6400FE7D94 /* Provider.swift */,
+				D86B08572144808900E5555B /* PopulateDatabase.swift */,
 				D8C5E1AD2142ECE900FE7D94 /* DatabaseManager.swift */,
 				D8C5E1A82142EABD00FE7D94 /* Entities */,
 			);
@@ -358,7 +412,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86B084421443C0200E5555B /* TicketsDetail.storyboard in Resources */,
 				D8C5E1D42142F39D00FE7D94 /* LaunchScreen.storyboard in Resources */,
+				D86B0856214468CF00E5555B /* TicketsList.storyboard in Resources */,
+				D86B085121445A1700E5555B /* TicketTableViewCell.xib in Resources */,
 				D8976E1B214210120042DEC1 /* Assets.xcassets in Resources */,
 				D8C5E1D22142F39400FE7D94 /* Main.storyboard in Resources */,
 				D8C5E1E8214301E200FE7D94 /* Home.storyboard in Resources */,
@@ -504,20 +561,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8C5E1D92142F77400FE7D94 /* DatabaseManager.swift in Sources */,
+				D86B085321445B1E00E5555B /* TicketsTableViewController.swift in Sources */,
+				D86B08422144357300E5555B /* TicketsDetailProtocols.swift in Sources */,
+				D86B083D2144357300E5555B /* TicketsDetailInteractor.swift in Sources */,
 				D8C5E1E4214301D400FE7D94 /* HomeInteractor.swift in Sources */,
-				D8C5E1CF2142F36500FE7D94 /* ViewController.swift in Sources */,
 				D8C5E1EE2143166F00FE7D94 /* UITextField+Extensions.swift in Sources */,
 				D8C5E1AC2142EAD500FE7D94 /* TicketEntity.swift in Sources */,
 				D8C5E1E7214301DC00FE7D94 /* HomeProtocols.swift in Sources */,
+				D86B085221445A1D00E5555B /* TicketTableViewCell.swift in Sources */,
+				D86B08582144808900E5555B /* PopulateDatabase.swift in Sources */,
 				D8C5E1E3214301D200FE7D94 /* HomeWireframe.swift in Sources */,
 				D8C5E1F52144283E00FE7D94 /* SearchParams.swift in Sources */,
 				D8C5E1AA2142EABD00FE7D94 /* BaseEntity.swift in Sources */,
 				D8C5E1E6214301D900FE7D94 /* homePresenter.swift in Sources */,
+				D86B08412144357300E5555B /* TicketsDetailPresenter.swift in Sources */,
 				D8C5E1F02143184400FE7D94 /* Theme.swift in Sources */,
 				D8C5E1D82142F77200FE7D94 /* LocalDataSource.swift in Sources */,
 				D8C5E1D62142F4FF00FE7D94 /* Date+Extensions.swift in Sources */,
 				D8C5E1D72142F76E00FE7D94 /* Provider.swift in Sources */,
+				D86B083F2144357300E5555B /* TicketsDetailViewController.swift in Sources */,
 				D8976E0F214210100042DEC1 /* AppDelegate.swift in Sources */,
+				D86B08402144357300E5555B /* TicketsDetailWireframe.swift in Sources */,
 				D8C5E1DB2142F8CA00FE7D94 /* Repository.swift in Sources */,
 				D8C5E1F22143190400FE7D94 /* UIColor+Extensions.swift in Sources */,
 				D8C5E1E5214301D600FE7D94 /* HomeViewController.swift in Sources */,

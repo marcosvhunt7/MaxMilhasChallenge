@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pk5-4f-6rV">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PESQUISAR PASSAGEM-->
+        <scene sceneID="7bY-ei-OPm">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Pk5-4f-6rV" customClass="TicketsDetailViewController" customModule="MaxMilhasChallenge" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fgX-Bc-SuR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="msa-qc-PTl">
+                                <rect key="frame" x="0.0" y="44" width="375" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GxE-Kd-z5J">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ado-nZ-4dD">
+                                                <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                <state key="normal" title="Cia Aéria">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTz-Bc-kUb">
+                                                <rect key="frame" x="93.666666666666686" y="0.0" width="94" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                <state key="normal" title="Partida">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgD-b3-K8c">
+                                                <rect key="frame" x="187.66666666666666" y="0.0" width="93.666666666666657" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                <state key="normal" title="Duração">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkR-X3-Nte">
+                                                <rect key="frame" x="281.33333333333331" y="0.0" width="93.666666666666686" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                <state key="normal" title="Chegada">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="PTz-Bc-kUb" firstAttribute="height" secondItem="Ado-nZ-4dD" secondAttribute="height" id="3d3-oh-dAG"/>
+                                            <constraint firstItem="PkR-X3-Nte" firstAttribute="height" secondItem="Ado-nZ-4dD" secondAttribute="height" id="GOB-ee-Vwp"/>
+                                            <constraint firstItem="hgD-b3-K8c" firstAttribute="height" secondItem="Ado-nZ-4dD" secondAttribute="height" id="IgP-gG-22y"/>
+                                            <constraint firstItem="hgD-b3-K8c" firstAttribute="width" secondItem="Ado-nZ-4dD" secondAttribute="width" id="L5k-xV-yUt"/>
+                                            <constraint firstItem="PkR-X3-Nte" firstAttribute="width" secondItem="Ado-nZ-4dD" secondAttribute="width" id="VkU-gc-UCy"/>
+                                            <constraint firstItem="PTz-Bc-kUb" firstAttribute="width" secondItem="Ado-nZ-4dD" secondAttribute="width" id="bmb-Ea-iGx"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.52941176470588236" green="0.57647058823529407" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="GxE-Kd-z5J" firstAttribute="top" secondItem="msa-qc-PTl" secondAttribute="top" id="47o-PC-d55"/>
+                                    <constraint firstAttribute="bottom" secondItem="GxE-Kd-z5J" secondAttribute="bottom" id="EXh-QI-8IK"/>
+                                    <constraint firstAttribute="height" constant="40" id="old-L2-4XR"/>
+                                    <constraint firstAttribute="trailing" secondItem="GxE-Kd-z5J" secondAttribute="trailing" id="pJc-HN-r7u"/>
+                                    <constraint firstItem="GxE-Kd-z5J" firstAttribute="leading" secondItem="msa-qc-PTl" secondAttribute="leading" id="rGn-8r-LhQ"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4z-Bh-5YB">
+                                <rect key="frame" x="0.0" y="84" width="375" height="654"/>
+                                <connections>
+                                    <segue destination="7jP-Wx-1U1" kind="embed" identifier="TicketsTableViewController" id="77W-jA-Tdf"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G9C-Oa-ToE">
+                                <rect key="frame" x="0.0" y="738" width="375" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwb-if-i0D">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <state key="normal" title="FILTRAR" image="filtro">
+                                            <color key="titleColor" red="0.4823529411764706" green="0.53333333333333333" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcc-xn-6vL">
+                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <state key="normal" title="ORDENAR" image="ordenar">
+                                            <color key="titleColor" red="0.4823529411764706" green="0.53333333333333333" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Dwb-if-i0D" firstAttribute="leading" secondItem="G9C-Oa-ToE" secondAttribute="leading" id="1BK-kB-yle"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pcc-xn-6vL" secondAttribute="bottom" id="CQK-FL-ff1"/>
+                                    <constraint firstItem="Pcc-xn-6vL" firstAttribute="width" secondItem="Dwb-if-i0D" secondAttribute="width" id="Pvk-9b-tn7"/>
+                                    <constraint firstItem="Pcc-xn-6vL" firstAttribute="leading" secondItem="Dwb-if-i0D" secondAttribute="trailing" id="UVi-J7-knc"/>
+                                    <constraint firstItem="Pcc-xn-6vL" firstAttribute="leading" secondItem="Dwb-if-i0D" secondAttribute="trailing" id="XcS-nb-TWO"/>
+                                    <constraint firstItem="Pcc-xn-6vL" firstAttribute="top" secondItem="G9C-Oa-ToE" secondAttribute="top" id="aNQ-rH-VHv"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dwb-if-i0D" secondAttribute="bottom" id="ePd-ie-Tze"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pcc-xn-6vL" secondAttribute="trailing" id="fJO-kO-mOU"/>
+                                    <constraint firstItem="Dwb-if-i0D" firstAttribute="top" secondItem="G9C-Oa-ToE" secondAttribute="top" id="n2g-tt-uQP"/>
+                                    <constraint firstAttribute="height" constant="40" id="vlr-UM-WJ0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="G9C-Oa-ToE" firstAttribute="trailing" secondItem="Hqm-MC-PBz" secondAttribute="trailing" id="3pF-hF-uDW"/>
+                            <constraint firstItem="G9C-Oa-ToE" firstAttribute="leading" secondItem="Hqm-MC-PBz" secondAttribute="leading" id="CJd-3C-Vyk"/>
+                            <constraint firstItem="msa-qc-PTl" firstAttribute="leading" secondItem="Hqm-MC-PBz" secondAttribute="leading" id="Kj3-Jj-oQc"/>
+                            <constraint firstItem="v4z-Bh-5YB" firstAttribute="leading" secondItem="Hqm-MC-PBz" secondAttribute="leading" id="Whm-ej-EAZ"/>
+                            <constraint firstItem="Hqm-MC-PBz" firstAttribute="trailing" secondItem="msa-qc-PTl" secondAttribute="trailing" id="bfK-5a-wE3"/>
+                            <constraint firstItem="v4z-Bh-5YB" firstAttribute="top" secondItem="msa-qc-PTl" secondAttribute="bottom" id="iFW-V7-ewR"/>
+                            <constraint firstItem="v4z-Bh-5YB" firstAttribute="top" secondItem="msa-qc-PTl" secondAttribute="bottom" id="imh-wO-7i1"/>
+                            <constraint firstItem="G9C-Oa-ToE" firstAttribute="top" secondItem="v4z-Bh-5YB" secondAttribute="bottom" id="maB-eP-knh"/>
+                            <constraint firstItem="msa-qc-PTl" firstAttribute="top" secondItem="Hqm-MC-PBz" secondAttribute="top" id="qPs-9c-evH"/>
+                            <constraint firstItem="Hqm-MC-PBz" firstAttribute="trailing" secondItem="v4z-Bh-5YB" secondAttribute="trailing" id="utl-6w-NuJ"/>
+                            <constraint firstItem="Hqm-MC-PBz" firstAttribute="bottom" secondItem="G9C-Oa-ToE" secondAttribute="bottom" id="wM0-MA-2EF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hqm-MC-PBz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PESQUISAR PASSAGEM" leftItemsSupplementBackButton="YES" id="AG0-sy-39A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="baX-jl-d6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-456.80000000000001" y="962.06896551724139"/>
+        </scene>
+        <!--TicketsTableViewController-->
+        <scene sceneID="nyA-yw-Cdi">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TicketsTableViewController" storyboardName="TicketsList" referencedIdentifier="TicketsTableViewController" id="7jP-Wx-1U1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6k-4d-Qsu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="962"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="filtro" width="11" height="10"/>
+        <image name="ordenar" width="11" height="11"/>
+    </resources>
+</document>

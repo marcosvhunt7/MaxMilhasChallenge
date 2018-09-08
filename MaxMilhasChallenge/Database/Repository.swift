@@ -8,7 +8,11 @@ final class Repository {
         self.localDataSource = localDataSource
     }
 
-    func getTickets() -> [TicketEntity] {
-        return localDataSource.getTickets(from: "São Paulo")!
+    func getAllTickets() -> [TicketEntity] {
+        return localDataSource.getAllTickets()
+    }
+
+    func getTicketsWithFilter(searchParams: SearchParams) -> [TicketEntity] {
+        return localDataSource.getTickets(searchParams)
     }
 }
