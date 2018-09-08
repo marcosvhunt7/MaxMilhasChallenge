@@ -5,13 +5,14 @@ protocol HomeViewProtocol: class {
 }
 
 protocol HomePresenterProtocol: class {
-    func search(ticket: String)
+    func search(departure: String?, destination: String?, departureDate: String?, returnDate: String?, numberOfPassengers: String?)
 }
 
 protocol HomeInteractorProcotol: class {
-
+    func organizeParams(departure: String?, destination: String?, departureDate: String?, returnDate: String?, numberOfPassengers: String?) -> SearchParams
 }
 
 protocol HomeWireframeProtocol: class {
-    func search(ticket: String)
+    func search(params: SearchParams)
+    func showEmptyAlert()
 }

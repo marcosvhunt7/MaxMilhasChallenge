@@ -12,7 +12,16 @@ final class HomePresenter: HomePresenterProtocol {
         self.wireframe = wireframe
     }
 
-    func search(ticket: String) {
-        wireframe.search(ticket: ticket)
+    func search(departure: String?, destination: String?, departureDate: String?, returnDate: String?, numberOfPassengers: String?) {
+        if (departure ?? "").isEmpty &&
+            (destination ?? "").isEmpty &&
+            (departureDate ?? "").isEmpty &&
+            (returnDate ?? "").isEmpty &&
+            (numberOfPassengers ?? "").isEmpty {
+            wireframe.showEmptyAlert()
+        } else {
+            let searchParams = interactor.organizeParams(departure: departure, destination: destination, departureDate: departureDate, returnDate: returnDate, numberOfPassengers: numberOfPassengers)
+            wireframe.search(params: searchParams)
+        }
     }
 }

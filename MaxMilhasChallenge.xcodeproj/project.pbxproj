@@ -29,6 +29,10 @@
 		D8C5E1E6214301D900FE7D94 /* homePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1DF2142FB1B00FE7D94 /* homePresenter.swift */; };
 		D8C5E1E7214301DC00FE7D94 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1DE2142FB1B00FE7D94 /* HomeProtocols.swift */; };
 		D8C5E1E8214301E200FE7D94 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C5E1DD2142FB1B00FE7D94 /* Home.storyboard */; };
+		D8C5E1EE2143166F00FE7D94 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1ED2143166F00FE7D94 /* UITextField+Extensions.swift */; };
+		D8C5E1F02143184400FE7D94 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1EF2143184400FE7D94 /* Theme.swift */; };
+		D8C5E1F22143190400FE7D94 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1F12143190400FE7D94 /* UIColor+Extensions.swift */; };
+		D8C5E1F52144283E00FE7D94 /* SearchParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1F42144283E00FE7D94 /* SearchParams.swift */; };
 		ED7085BEB616E8A22A2485B8 /* Pods_MaxMilhasChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B6F2C594DB4D809C48DA6F /* Pods_MaxMilhasChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +86,10 @@
 		D8C5E1E02142FB1B00FE7D94 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D8C5E1E12142FB1B00FE7D94 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		D8C5E1E22142FB1B00FE7D94 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		D8C5E1ED2143166F00FE7D94 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		D8C5E1EF2143184400FE7D94 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D8C5E1F12143190400FE7D94 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		D8C5E1F42144283E00FE7D94 /* SearchParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParams.swift; sourceTree = "<group>"; };
 		F37A6E9F3358D06E9C0EB8BE /* Pods-MaxMilhasChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaxMilhasChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaxMilhasChallengeTests/Pods-MaxMilhasChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F480EA577EB0FCE921B6D080 /* Pods_MaxMilhasChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaxMilhasChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48E794A0312723F3A1C7501 /* Pods-MaxMilhasChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaxMilhasChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaxMilhasChallenge/Pods-MaxMilhasChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,7 +175,10 @@
 				D8C5E1DC2142FB1B00FE7D94 /* Home */,
 				D8976E0E214210100042DEC1 /* AppDelegate.swift */,
 				D8C5E1CE2142F36400FE7D94 /* ViewController.swift */,
+				D8C5E1EF2143184400FE7D94 /* Theme.swift */,
 				D8C5E1D52142F4FF00FE7D94 /* Date+Extensions.swift */,
+				D8C5E1ED2143166F00FE7D94 /* UITextField+Extensions.swift */,
+				D8C5E1F12143190400FE7D94 /* UIColor+Extensions.swift */,
 				D8C5E1D12142F38C00FE7D94 /* Main.storyboard */,
 				D8976E1A214210120042DEC1 /* Assets.xcassets */,
 				D8C5E1D32142F39B00FE7D94 /* LaunchScreen.storyboard */,
@@ -197,6 +208,7 @@
 		D8C5E1A72142EABD00FE7D94 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				D8C5E1F32144282A00FE7D94 /* Others */,
 				D8C5E1DA2142F8C900FE7D94 /* Repository.swift */,
 				D8C5E1AF2142F04400FE7D94 /* LocalDataSource.swift */,
 				D8C5E1AE2142EF6400FE7D94 /* Provider.swift */,
@@ -228,6 +240,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		D8C5E1F32144282A00FE7D94 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5E1F42144283E00FE7D94 /* SearchParams.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,6 +260,8 @@
 				D8976E08214210100042DEC1 /* Frameworks */,
 				D8976E09214210100042DEC1 /* Resources */,
 				53C40094C3D2F46FE7D14601 /* [CP] Embed Pods Frameworks */,
+				D8C5E1E9214308E700FE7D94 /* SwiftLint autocorrect */,
+				D8C5E1EA21430AA300FE7D94 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -446,6 +468,34 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D8C5E1E9214308E700FE7D94 /* SwiftLint autocorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint autocorrect";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint autocorrect";
+		};
+		D8C5E1EA21430AA300FE7D94 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -456,16 +506,20 @@
 				D8C5E1D92142F77400FE7D94 /* DatabaseManager.swift in Sources */,
 				D8C5E1E4214301D400FE7D94 /* HomeInteractor.swift in Sources */,
 				D8C5E1CF2142F36500FE7D94 /* ViewController.swift in Sources */,
+				D8C5E1EE2143166F00FE7D94 /* UITextField+Extensions.swift in Sources */,
 				D8C5E1AC2142EAD500FE7D94 /* TicketEntity.swift in Sources */,
 				D8C5E1E7214301DC00FE7D94 /* HomeProtocols.swift in Sources */,
 				D8C5E1E3214301D200FE7D94 /* HomeWireframe.swift in Sources */,
+				D8C5E1F52144283E00FE7D94 /* SearchParams.swift in Sources */,
 				D8C5E1AA2142EABD00FE7D94 /* BaseEntity.swift in Sources */,
 				D8C5E1E6214301D900FE7D94 /* homePresenter.swift in Sources */,
+				D8C5E1F02143184400FE7D94 /* Theme.swift in Sources */,
 				D8C5E1D82142F77200FE7D94 /* LocalDataSource.swift in Sources */,
 				D8C5E1D62142F4FF00FE7D94 /* Date+Extensions.swift in Sources */,
 				D8C5E1D72142F76E00FE7D94 /* Provider.swift in Sources */,
 				D8976E0F214210100042DEC1 /* AppDelegate.swift in Sources */,
 				D8C5E1DB2142F8CA00FE7D94 /* Repository.swift in Sources */,
+				D8C5E1F22143190400FE7D94 /* UIColor+Extensions.swift in Sources */,
 				D8C5E1E5214301D600FE7D94 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

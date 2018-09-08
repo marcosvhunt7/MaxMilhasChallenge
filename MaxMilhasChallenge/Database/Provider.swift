@@ -16,8 +16,8 @@ class Provider {
         let types: [RealmSwift.Object.Type] = [TicketEntity.self]
         return DatabaseManager.forceInit(name: "\(version).realm", types: types)
     }()
-    
+
     lazy var localDataSource = LocalDataSource(database: self.database.getDatabase())
-    
+
     lazy var repository = Repository(localDataSource: self.localDataSource)
 }

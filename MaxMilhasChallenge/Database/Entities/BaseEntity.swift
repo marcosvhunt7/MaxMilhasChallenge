@@ -6,5 +6,5 @@ class BaseEntity: RealmSwift.Object {
 }
 
 class UserSpaceEntity: BaseEntity {
-    
+
 }

@@ -8,15 +8,13 @@
 
 import UIKit
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     var window: UIWindow?
-    
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+
         let entity = TicketEntity()
         entity.departure = "Belo Horizonte"
         entity.destination = "São Paulo"
@@ -28,23 +26,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         entity.departureAirline = "Azul"
         entity.returnAirline = "GOL"
-        
+
         try? Provider.shared.localDataSource.saveTickets([entity])
-        
+
         window = UIWindow(frame: UIScreen.main.bounds)
-        
+
         let homeInteractor = HomeInteractor(repository: Provider.shared.repository)
         if let homeController = HomeWireframe(interactor: homeInteractor).controller {
             window?.rootViewController = homeController
         }
-        
+
         window?.makeKeyAndVisible()
-        
+
         print(Provider.shared.repository.getTickets())
-        
-        
-        
+
         return true
     }
 }
-

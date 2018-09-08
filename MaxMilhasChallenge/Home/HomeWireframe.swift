@@ -13,22 +13,15 @@ final class HomeWireframe: HomeWireframeProtocol {
             view.setPresenter(presenter)
         }
     }
-    
-    func search(ticket: String) {
-        print("ticket")
+
+    func search(params: SearchParams) {
+        print(params)
     }
-//
-//    func selectedExposure(exposures: [Exposure]) {
-//        self.controller?.dismiss(animated: true, completion: {
-//            self.selectedExposureCompletion(exposures)
-//        })
-//    }
-//
-//    func selectLocale(completion: @escaping (Bool) -> Void) {
-//        let selectLocaleInteractor = SelectLocaleInteractor(repository: Provider.shared.repository)
-//        if let selectLocaleViewController = SelectLocaleWireframe(interactor: selectLocaleInteractor, completion: completion).controller {
-//            selectLocaleViewController.modalPresentationStyle = .overCurrentContext
-//            controller?.present(selectLocaleViewController, animated: true, completion: nil)
-//        }
-//    }
+
+    func showEmptyAlert() {
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let alert = UIAlertController(title: "Dica", message: "Voce precisa preencher pelo menos um campo :)", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(okAction)
+        self.controller?.present(alert, animated: true, completion: nil)
+    }
 }

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--MaxMilhas-->
         <scene sceneID="7bY-ei-OPm">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Pk5-4f-6rV" customClass="HomeViewController" customModule="Maestro" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,26 +17,108 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cheguemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vL-Nz-ECB">
-                                <rect key="frame" x="153" y="233" width="84" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IATA Origem" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f18-6O-5Hb">
+                                <rect key="frame" x="20" y="20" width="335" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Gx5-E2-kXd"/>
+                                </constraints>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="address-level1+2"/>
+                            </textField>
+                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IATA Destino" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L1Y-lG-BSM">
+                                <rect key="frame" x="20" y="94" width="335" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="kuE-lC-HrR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="address-level1+2"/>
+                            </textField>
+                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data da ida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GHC-IA-TKH">
+                                <rect key="frame" x="20" y="168" width="159.66666666666666" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="zpw-yf-aKb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="depurateDateAction:" destination="Pk5-4f-6rV" eventType="editingDidBegin" id="G3x-aq-MzT"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data da volta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RyT-pN-rRz">
+                                <rect key="frame" x="195.66666666666663" y="168" width="159.33333333333337" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="DOT-de-9uu"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="returnDateAction:" destination="Pk5-4f-6rV" eventType="editingDidBegin" id="I3Q-DM-MW5"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de passageiros" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rG5-3a-bWc">
+                                <rect key="frame" x="20" y="242" width="335" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Ljg-Lg-YXn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNh-VF-blw">
+                                <rect key="frame" x="20" y="316" width="335" height="54"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.65490196079999996" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="KID-yZ-QEb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="Pesquisar passagem" image="btnUnselectedBranco"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="searchAction:" destination="Pk5-4f-6rV" eventType="touchUpInside" id="avk-sN-R9E"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.95294117647058818" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="L1Y-lG-BSM" firstAttribute="top" secondItem="f18-6O-5Hb" secondAttribute="bottom" constant="20" id="AZ9-v9-Vn6"/>
+                            <constraint firstItem="Hqm-MC-PBz" firstAttribute="trailing" secondItem="f18-6O-5Hb" secondAttribute="trailing" constant="20" id="Bnc-xm-mVV"/>
+                            <constraint firstItem="iNh-VF-blw" firstAttribute="top" secondItem="rG5-3a-bWc" secondAttribute="bottom" constant="20" id="Cwp-Br-44n"/>
+                            <constraint firstItem="rG5-3a-bWc" firstAttribute="leading" secondItem="Hqm-MC-PBz" secondAttribute="leading" constant="20" id="G5A-YW-2bu"/>
+                            <constraint firstItem="Hqm-MC-PBz" firstAttribute="trailing" secondItem="iNh-VF-blw" secondAttribute="trailing" constant="20" id="I9b-yB-SQZ"/>
+                            <constraint firstItem="GHC-IA-TKH" firstAttribute="leading" secondItem="Hqm-MC-PBz" secondAttribute="leading" constant="20" id="Pmn-Z9-Olz"/>
+                            <constraint firstItem="rG5-3a-bWc" firstAttribute="top" secondItem="GHC-IA-TKH" secondAttribute="bottom" constant="20" id="Wdf-Wr-6Xv"/>
+                            <constraint firstItem="L1Y-lG-BSM" firstAttribute="leading" secondItem="Hqm-MC-PBz" secondAttribute="leading" constant="20" id="XFT-wk-l6D"/>
+                            <constraint firstItem="f18-6O-5Hb" firstAttribute="top" secondItem="Hqm-MC-PBz" secondAttribute="top" constant="20" id="Y9W-LL-oBK"/>
+                            <constraint firstItem="f18-6O-5Hb" firstAttribute="leading" secondItem="Hqm-MC-PBz" secondAttribute="leading" constant="20" id="Zgq-hQ-ehk"/>
+                            <constraint firstItem="RyT-pN-rRz" firstAttribute="width" secondItem="GHC-IA-TKH" secondAttribute="width" id="aCE-9C-ws9"/>
+                            <constraint firstItem="iNh-VF-blw" firstAttribute="leading" secondItem="Hqm-MC-PBz" secondAttribute="leading" constant="20" id="bMS-KT-EVU"/>
+                            <constraint firstItem="Hqm-MC-PBz" firstAttribute="trailing" secondItem="L1Y-lG-BSM" secondAttribute="trailing" constant="20" id="cyg-go-fNh"/>
+                            <constraint firstItem="Hqm-MC-PBz" firstAttribute="trailing" secondItem="rG5-3a-bWc" secondAttribute="trailing" constant="20" id="fbO-oE-3xy"/>
+                            <constraint firstItem="RyT-pN-rRz" firstAttribute="top" secondItem="L1Y-lG-BSM" secondAttribute="bottom" constant="20" id="iB9-uI-eFh"/>
+                            <constraint firstItem="Hqm-MC-PBz" firstAttribute="trailing" secondItem="RyT-pN-rRz" secondAttribute="trailing" constant="20" id="mnT-zw-PMU"/>
+                            <constraint firstItem="GHC-IA-TKH" firstAttribute="top" secondItem="L1Y-lG-BSM" secondAttribute="bottom" constant="20" id="rox-Es-Zct"/>
+                            <constraint firstItem="rG5-3a-bWc" firstAttribute="top" secondItem="RyT-pN-rRz" secondAttribute="bottom" constant="20" id="v5O-6s-9w0"/>
+                            <constraint firstItem="RyT-pN-rRz" firstAttribute="leading" secondItem="GHC-IA-TKH" secondAttribute="trailing" constant="16" id="zfc-sk-aLz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hqm-MC-PBz"/>
                     </view>
-                    <navigationItem key="navigationItem" id="AG0-sy-39A">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="fqn-mH-i8p">
-                            <connections>
-                                <action selector="doneAction:" destination="Pk5-4f-6rV" id="Dtf-d1-HVs"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="MaxMilhas" id="AG0-sy-39A"/>
                     <connections>
-                        <outlet property="doneButton" destination="fqn-mH-i8p" id="I7p-3c-3i1"/>
+                        <outlet property="departureDateTextField" destination="GHC-IA-TKH" id="BVX-7L-Bjf"/>
+                        <outlet property="departureTextField" destination="f18-6O-5Hb" id="A9J-2w-OSd"/>
+                        <outlet property="destinationTextField" destination="L1Y-lG-BSM" id="qug-ig-8fm"/>
+                        <outlet property="numberOfPassengersTextField" destination="rG5-3a-bWc" id="t5u-dX-PTa"/>
+                        <outlet property="returnDateTextField" destination="RyT-pN-rRz" id="91B-ox-UGe"/>
+                        <outlet property="searchButton" destination="iNh-VF-blw" id="F5c-wQ-3HE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="baX-jl-d6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -51,6 +133,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="B7L-W9-eHy">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.086274509803921567" green="0.65490196078431373" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -62,4 +148,7 @@
             <point key="canvasLocation" x="-1148" y="963"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btnUnselectedBranco" width="13" height="13"/>
+    </resources>
 </document>

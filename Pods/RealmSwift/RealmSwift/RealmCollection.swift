@@ -281,7 +281,6 @@ public protocol RealmCollection: RealmCollectionBase {
     /// A human-readable description of the objects contained in the collection.
     var description: String { get }
 
-
     // MARK: Index Retrieval
 
     /**
@@ -305,7 +304,6 @@ public protocol RealmCollection: RealmCollectionBase {
      */
     func index(matching predicateFormat: String, _ args: Any...) -> Int?
 
-
     // MARK: Filtering
 
     /**
@@ -321,7 +319,6 @@ public protocol RealmCollection: RealmCollectionBase {
      - parameter predicate: The predicate to use to filter the objects.
      */
     func filter(_ predicate: NSPredicate) -> Results<ElementType>
-
 
     // MARK: Sorting
 
@@ -392,7 +389,6 @@ public protocol RealmCollection: RealmCollectionBase {
      - parameter property: The name of a property whose values should be summed.
      */
     func average(ofProperty property: String) -> Double?
-
 
     // MARK: Key-Value Coding
 
@@ -498,7 +494,6 @@ extension Optional: OptionalProtocol {
     // swiftlint:disable:next identifier_name
     public func _rlmInferWrappedType() -> Wrapped { return self! }
 }
-
 
 // FIXME: See the declaration of RealmCollectionBase for why this `#if` is required.
 #if swift(>=3.2)
@@ -725,7 +720,6 @@ private final class _AnyRealmCollection<C: RealmCollection>: _AnyRealmCollection
     override var count: Int { return base.count }
     override var description: String { return base.description }
 
-
     // MARK: Index Retrieval
 
     override func index(of object: C.ElementType) -> Int? { return base.index(of: object) }
@@ -755,7 +749,6 @@ private final class _AnyRealmCollection<C: RealmCollection>: _AnyRealmCollection
         return base.sorted(by: sortDescriptors)
     }
 
-
     // MARK: Aggregate Operations
 
     override func min<T: MinMaxType>(ofProperty property: String) -> T? {
@@ -774,7 +767,6 @@ private final class _AnyRealmCollection<C: RealmCollection>: _AnyRealmCollection
         return base.average(ofProperty: property)
     }
 
-
     // MARK: Sequence Support
 
     override subscript(position: Int) -> C.ElementType {
@@ -790,7 +782,6 @@ private final class _AnyRealmCollection<C: RealmCollection>: _AnyRealmCollection
         return base.makeIterator() as! RLMIterator<Element>
     }
 
-
     // MARK: Collection Support
 
     override var startIndex: Int {
@@ -802,7 +793,6 @@ private final class _AnyRealmCollection<C: RealmCollection>: _AnyRealmCollection
         // FIXME: it should be possible to avoid this force-casting
         return base.endIndex as! Int
     }
-
 
     // MARK: Key-Value Coding
 
@@ -873,7 +863,6 @@ public final class AnyRealmCollection<Element: RealmCollectionValue>: RealmColle
     /// A human-readable description of the objects contained in the collection.
     public var description: String { return base.description }
 
-
     // MARK: Index Retrieval
 
     /**
@@ -919,7 +908,6 @@ public final class AnyRealmCollection<Element: RealmCollectionValue>: RealmColle
      */
     public func filter(_ predicate: NSPredicate) -> Results<Element> { return base.filter(predicate) }
 
-
     // MARK: Sorting
 
     /**
@@ -953,7 +941,6 @@ public final class AnyRealmCollection<Element: RealmCollectionValue>: RealmColle
         where S.Iterator.Element == SortDescriptor {
         return base.sorted(by: sortDescriptors)
     }
-
 
     // MARK: Aggregate Operations
 
@@ -1000,7 +987,6 @@ public final class AnyRealmCollection<Element: RealmCollectionValue>: RealmColle
      */
     public func average(ofProperty property: String) -> Double? { return base.average(ofProperty: property) }
 
-
     // MARK: Sequence Support
 
     /**
@@ -1013,7 +999,6 @@ public final class AnyRealmCollection<Element: RealmCollectionValue>: RealmColle
     /// Returns a `RLMIterator` that yields successive elements in the collection.
     public func makeIterator() -> RLMIterator<Element> { return base.makeIterator() }
 
-
     // MARK: Collection Support
 
     /// The position of the first element in a non-empty collection.
@@ -1024,7 +1009,6 @@ public final class AnyRealmCollection<Element: RealmCollectionValue>: RealmColle
     /// endIndex is not a valid argument to subscript, and is always reachable from startIndex by
     /// zero or more applications of successor().
     public var endIndex: Int { return base.endIndex }
-
 
     // MARK: Key-Value Coding
 
