@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0940"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7DD9395FE26690C3FBC1AC06975F0745"
+               BlueprintIdentifier = "3D07EB0556B1AD4E5B08CF072748D2CE"
                BuildableName = "Pods_MaxMilhasChallenge.framework"
                BlueprintName = "Pods-MaxMilhasChallenge"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7DD9395FE26690C3FBC1AC06975F0745"
+            BlueprintIdentifier = "3D07EB0556B1AD4E5B08CF072748D2CE"
             BuildableName = "Pods_MaxMilhasChallenge.framework"
             BlueprintName = "Pods-MaxMilhasChallenge"
             ReferencedContainer = "container:Pods.xcodeproj">

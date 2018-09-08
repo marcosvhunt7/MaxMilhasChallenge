@@ -6,7 +6,6 @@ target 'MaxMilhasChallenge' do
   use_frameworks!
 
   # Pods for MaxMilhasChallenge
-  pod 'MaterialComponents'
   pod 'RealmSwift'
   pod 'SwiftLint'
 
