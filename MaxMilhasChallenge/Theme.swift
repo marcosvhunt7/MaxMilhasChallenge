@@ -16,5 +16,6 @@ struct Theme {
         static let navBarItems: UIColor = UIColor.white
 
         static let primaryColor: UIColor = UIColor(rgb: 0x16A78A)
+        static let silverColor: UIColor = UIColor(rgb: 0xd8dcde)
     }
 }

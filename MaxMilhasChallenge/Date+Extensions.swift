@@ -15,6 +15,7 @@ extension Date {
 
     public func toString(format: String) -> String {
         let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "pt_BR")
         dateFormatter.dateFormat = format
         dateFormatter.timeZone = TimeZone.init(secondsFromGMT: 0)
 

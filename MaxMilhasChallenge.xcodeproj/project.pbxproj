@@ -26,7 +26,6 @@
 		D8976E34214210130042DEC1 /* MaxMilhasChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8976E33214210130042DEC1 /* MaxMilhasChallengeUITests.swift */; };
 		D8C5E1AA2142EABD00FE7D94 /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1A92142EABD00FE7D94 /* BaseEntity.swift */; };
 		D8C5E1AC2142EAD500FE7D94 /* TicketEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1AB2142EAD500FE7D94 /* TicketEntity.swift */; };
-		D8C5E1D22142F39400FE7D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C5E1D12142F38C00FE7D94 /* Main.storyboard */; };
 		D8C5E1D42142F39D00FE7D94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C5E1D32142F39B00FE7D94 /* LaunchScreen.storyboard */; };
 		D8C5E1D62142F4FF00FE7D94 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1D52142F4FF00FE7D94 /* Date+Extensions.swift */; };
 		D8C5E1D72142F76E00FE7D94 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5E1AE2142EF6400FE7D94 /* Provider.swift */; };
@@ -96,7 +95,6 @@
 		D8C5E1AD2142ECE900FE7D94 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		D8C5E1AE2142EF6400FE7D94 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		D8C5E1AF2142F04400FE7D94 /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
-		D8C5E1D12142F38C00FE7D94 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D8C5E1D32142F39B00FE7D94 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8C5E1D52142F4FF00FE7D94 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		D8C5E1DA2142F8C900FE7D94 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -232,7 +230,6 @@
 				D8C5E1D52142F4FF00FE7D94 /* Date+Extensions.swift */,
 				D8C5E1ED2143166F00FE7D94 /* UITextField+Extensions.swift */,
 				D8C5E1F12143190400FE7D94 /* UIColor+Extensions.swift */,
-				D8C5E1D12142F38C00FE7D94 /* Main.storyboard */,
 				D8976E1A214210120042DEC1 /* Assets.xcassets */,
 				D8C5E1D32142F39B00FE7D94 /* LaunchScreen.storyboard */,
 				D8976E1F214210120042DEC1 /* Info.plist */,
@@ -417,7 +414,6 @@
 				D86B0856214468CF00E5555B /* TicketsList.storyboard in Resources */,
 				D86B085121445A1700E5555B /* TicketTableViewCell.xib in Resources */,
 				D8976E1B214210120042DEC1 /* Assets.xcassets in Resources */,
-				D8C5E1D22142F39400FE7D94 /* Main.storyboard in Resources */,
 				D8C5E1E8214301E200FE7D94 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

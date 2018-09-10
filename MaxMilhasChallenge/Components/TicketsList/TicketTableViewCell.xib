@@ -427,6 +427,7 @@
                 <outlet property="returnAirplaneCode" destination="vR0-jU-rSM" id="2WK-YH-RdO"/>
                 <outlet property="returnAirportCode" destination="WhE-1k-2AZ" id="fax-x7-C5P"/>
                 <outlet property="returnArrivalForecast" destination="i5m-vS-3qs" id="2yc-cs-0f4"/>
+                <outlet property="returnArrow" destination="x2i-GT-V5V" id="hV8-Hk-2q8"/>
                 <outlet property="returnDate" destination="78O-1T-FKx" id="zGo-qf-K9U"/>
                 <outlet property="returnDestinationAirportCode" destination="reP-jo-NEo" id="Ga3-Gz-9ra"/>
                 <outlet property="returnScale" destination="LOF-m1-tZh" id="rlR-Jg-hp1"/>

@@ -15,6 +15,11 @@ class TicketTableViewCell: UITableViewCell {
     @IBOutlet weak var departuredestinationAirportCode: UILabel!
 
     @IBOutlet weak var returntype: UILabel!
+    @IBOutlet weak var returnArrow: UIImageView! {
+        didSet {
+            returnArrow.transform = returnArrow.transform.rotated(by: .pi)
+        }
+    }
     @IBOutlet weak var returnDate: UILabel!
     @IBOutlet weak var returnAirline: UILabel!
     @IBOutlet weak var returnAirplaneCode: UILabel!
@@ -35,20 +40,20 @@ class TicketTableViewCell: UITableViewCell {
 
     func configureCell() {
         departuretype.text = "IDA"
-//        departureDate.text = ticket?.departureDate
+        departureDate.text = ticket?.departureDate.toString(format: "EEEE, dd 'de' MMMM 'de' yyyy")
         departureAirline.text = ticket?.departureAirline
         departureAirplaneCode.text = ticket?.departureAirplaneCode
-//        departureTime.text = ticket?.departureTime
+        departureTime.text = ticket?.departureDate.toString(format: "HH:mm")
         departureAirportCode.text = ticket?.departureAirportCode
         departureTimeTravel.text = ticket?.departureTimeTravel
         departureScale.text = ticket?.departureScale
         departureArrivalForecast.text = ticket?.departureArrivalForecast
         departuredestinationAirportCode.text = ticket?.departuredestinationAirportCode
         returntype.text = "VOLTA"
-//        returnDate.text = ticket?.returnDate
+        returnDate.text = ticket?.returnDate.toString(format: "EEEE, dd 'de' MMMM 'de' yyyy")
         returnAirline.text = ticket?.returnAirline
         returnAirplaneCode.text = ticket?.returnAirplaneCode
-//        returnTime.text = ticket?.returnTime
+        returnTime.text = ticket?.returnDate.toString(format: "HH:mm")
         returnAirportCode.text = ticket?.returnAirportCode
         returnTimeTravel.text = ticket?.returnTimeTravel
         returnScale.text = ticket?.returnScale

@@ -73,6 +73,7 @@
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4z-Bh-5YB">
                                 <rect key="frame" x="0.0" y="84" width="375" height="654"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="7jP-Wx-1U1" kind="embed" identifier="TicketsTableViewController" id="77W-jA-Tdf"/>
                                 </connections>
@@ -87,6 +88,9 @@
                                         <state key="normal" title="FILTRAR" image="filtro">
                                             <color key="titleColor" red="0.4823529411764706" green="0.53333333333333333" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="filterTapped:" destination="Pk5-4f-6rV" eventType="touchUpInside" id="YP8-e4-r69"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcc-xn-6vL">
                                         <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="40"/>
@@ -95,6 +99,9 @@
                                         <state key="normal" title="ORDENAR" image="ordenar">
                                             <color key="titleColor" red="0.4823529411764706" green="0.53333333333333333" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sortTapped:" destination="Pk5-4f-6rV" eventType="touchUpInside" id="TGY-jS-PDY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -129,6 +136,10 @@
                         <viewLayoutGuide key="safeArea" id="Hqm-MC-PBz"/>
                     </view>
                     <navigationItem key="navigationItem" title="PESQUISAR PASSAGEM" leftItemsSupplementBackButton="YES" id="AG0-sy-39A"/>
+                    <connections>
+                        <outlet property="filterButton" destination="Dwb-if-i0D" id="PKg-UN-fDn"/>
+                        <outlet property="sortButton" destination="Pcc-xn-6vL" id="wCs-EK-NQx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="baX-jl-d6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
