@@ -9,27 +9,37 @@ struct SearchParams {
 
     func getPredicate() -> (String, [Any]) {
         var predicateString: String = ""
+        var predicateArray: [String] = []
         var predicateArgs: [Any] = []
+
         if let departure = self.departure, !(departure).isEmpty {
-            predicateString += "departure = %@"
+            predicateArray.append("departure = %@")
             predicateArgs.append(departure)
         }
         if let destination = self.destination, !(destination).isEmpty {
-            predicateString += "destination = %@"
+            predicateArray.append("destination = %@")
             predicateArgs.append(destination)
         }
         if let departureDate = self.departureDate {
-            predicateString += "departureDate = %@"
+            predicateArray.append("departureDate = %@")
             predicateArgs.append(departureDate)
         }
         if let returnDate = self.returnDate {
-            predicateString += "returnDate = %@"
+            predicateArray.append("returnDate = %@")
             predicateArgs.append(returnDate)
         }
         if self.numberOfPassengers > 0 {
-            predicateString += "passengers >= %d"
+            predicateArray.append("passengers >= %d")
             predicateArgs.append(numberOfPassengers)
         }
+
+        predicateString = predicateArray.enumerated().reduce("", { (result, current) -> String in
+            if current.offset == 0 {
+                return result + current.element
+            } else {
+                return result + " AND " + current.element
+            }
+        })
 
         return (predicateString, predicateArgs)
     }
